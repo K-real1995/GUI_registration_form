@@ -13,8 +13,8 @@ class Gui(QtWidgets.QMainWindow):
         self.centerOnScreen()
 
         self.authorization_status = False
-        self.client = pymongo.MongoClient(
-            "mongodb+srv://K-real1995:qwerty1234@cluster0.5gldp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+        #Вставить ссылку от собственного mondodb
+        self.client = pymongo.MongoClient("YOUR DATABASE LINK!!!")
         self.ui.pushButton.clicked.connect(self.register)
         self.ui.pushButton_2.clicked.connect(self.login)
 
